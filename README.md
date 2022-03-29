@@ -13,16 +13,16 @@
 * The game is won if the player can manage to guess the word within six or less tries.
 * The game is lost if the player fails to guess the word within six tries, after which the hangman will be completely drawn.
 
-# SDLC Activity Based Learning
+## SDLC Activity Based Learning
 | Build on Linux | Build on Windows | Code Quality | Unit Testing | Git Inspector |
 | --- | --- | --- | --- | --- |
 | [![Linux CI](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/linux.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/linux.yml) |  | [![Code Quality - Static Code - Cppcheck](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/cppcheck.yml) | [![Unit Testing - Unity](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/Unit_testing.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/Unit_testing.yml) | [![Contribution Check - Git Inspector](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/gitinspector.yml) |
 
 
-# Codacy and Codiga Badges 
+## Codacy and Codiga Badges 
 
 
-# Folder Structure
+## Folder Structure
 Folders                | Description
 ----------------------| -----------------------------------------
 `0_Certificates`      | Certificates of courses completed
