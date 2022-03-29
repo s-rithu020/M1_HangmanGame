@@ -10,9 +10,9 @@
 * obj 2
 
 # SDLC Activity Based Learning
-| Build on Linux | Build on Windows | Code Quality | Unit Testing |
-| --- | --- | --- | --- |
-| [![Linux CI](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/linux.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/linux.yml) |  | [![Code Quality - Static Code - Cppcheck](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/cppcheck.yml) |  |
+| Build on Linux | Build on Windows | Code Quality | Unit Testing | Git Inspector |
+| --- | --- | --- | --- | --- |
+| [![Linux CI](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/linux.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/linux.yml) |  | [![Code Quality - Static Code - Cppcheck](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/cppcheck.yml) |  | [![Contribution Check - Git Inspector](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/gitinspector.yml) |
 
 
 # Codacy and Codiga Badges 
