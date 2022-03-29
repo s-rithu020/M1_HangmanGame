@@ -1,18 +1,22 @@
 # M1_HangmanGame
 
 ## Introduction:
+
 ### Description:
-* descp 1
-* descp 2
+* Hangman is a quick and easy game for two people, requiring just paper and pencil. One of the players, the "host", makes up a secret word. The other player has to try and guess this word by asking which of the letters of the alphabet it contains. However, every wrong guess brings them one step closer to losing the game. 
+* In this project, the "host" is the computer which plays against the human, who is the "other player". The computer randomly chooses a word from a word list and asks the player to guess the word within six tries.
+
 
 ### Objective
-* obj 1
-* obj 2
+* A random word is chosen as the "secret word".
+* The player has to try and guess this word within six tries.
+* The game is won if the player can manage to guess the word within six or less tries.
+* The game is lost if the player fails to guess the word within six tries, after which the hangman will be completely drawn.
 
 # SDLC Activity Based Learning
 | Build on Linux | Build on Windows | Code Quality | Unit Testing | Git Inspector |
 | --- | --- | --- | --- | --- |
-| [![Linux CI](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/linux.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/linux.yml) |  | [![Code Quality - Static Code - Cppcheck](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/cppcheck.yml) |  | [![Contribution Check - Git Inspector](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/gitinspector.yml) |
+| [![Linux CI](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/linux.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/linux.yml) |  | [![Code Quality - Static Code - Cppcheck](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/cppcheck.yml) | [![Unit Testing - Unity](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/Unit_testing.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/Unit_testing.yml) | [![Contribution Check - Git Inspector](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/s-rithu020/M1_HangmanGame/actions/workflows/gitinspector.yml) |
 
 
 # Codacy and Codiga Badges 
@@ -30,4 +34,7 @@ Folders                | Description
 `6_Images`            | Images related to the project
 
 
-## Learning Resources
+## Learning Resources and References
+* [Hangman Game](https://www.hangmanwords.com/play)
+* [Source for word list (Modified it by adding more words)](https://github.com/Xethron/Hangman/blob/master/words.txt)
+* Youtube tutorials
