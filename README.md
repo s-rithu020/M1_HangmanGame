@@ -22,7 +22,7 @@
 # Codacy and Codiga Badges 
 
 
-## Folder Structure
+# Folder Structure
 Folders                | Description
 ----------------------| -----------------------------------------
 `0_Certificates`      | Certificates of courses completed
