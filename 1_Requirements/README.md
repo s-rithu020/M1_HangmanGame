@@ -43,7 +43,7 @@ Hangman can be played on a piece of paper with a pencil. It is also available on
 | HR02 | Player should be able to quit the game whenever required | Implemented |
 | HR03 | Player can replay the game if required | Implemented |
 | HR04 | Player should be able to select the length of the words | Future |
-| HR05 | Repeatedly guessing the same letter are not counted as a new guess | Implemented |
+| HR05 | Repeatedly guessing the same letter present in word isn't counted as a new guess | Implemented |
 | HR06 | Player should be able to see a list of letters not guessed yet | Future |
 | HR07 | Player should be able to change the difficulty of the game | Future |
 
