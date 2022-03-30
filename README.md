@@ -20,7 +20,13 @@
 
 
 ## Codacy and Codiga Badges 
+* Codacy
 
+* Codiga
+
+   ![Code Quality score](https://api.codiga.io/project/32238/score/svg)
+
+   ![Code Grade](https://api.codiga.io/project/32238/status/svg)
 
 ## Folder Structure
 Folders                | Description
