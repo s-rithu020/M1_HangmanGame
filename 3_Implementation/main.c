@@ -58,7 +58,7 @@ int startGame()
     }
     
     while(fgets(input, 63, fwords)) {
-		sscanf(input, "%s", guessWords[wordsRead]);
+		sscanf(input, "%63s", guessWords[wordsRead]);
 		wordsRead++;
 	}
 
