@@ -48,7 +48,7 @@ int startGame()
         printf("Enter a letter in lowercase: ");
 
         char alphabet[MAXWORDS];
-        scanf(" %s", &alphabet[0]);
+        scanf(" %999s", &alphabet[0]);
 
         int unsolvedAlpha = 0;
         for (counter = 0; counter < strlen(word); counter++) {

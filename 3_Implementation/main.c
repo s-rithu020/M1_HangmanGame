@@ -91,7 +91,7 @@ int startGame()
         printf("Enter a letter in lowercase: ");
 
         char alphabet[MAXWORDS];
-        scanf(" %s", &alphabet[0]);
+        scanf(" %999s", &alphabet[0]);
 
         int unsolvedAlpha = 0;
         for (counter = 0; counter < strlen(word); counter++) {
@@ -172,7 +172,7 @@ void replay()
     char selected[MAXWORDS];
     while (choice == FALSE) {
         printf("Do you want to play again? (y/n)\n");
-        scanf("%9999s", &selected[0]);
+        scanf("%999s", &selected[0]);
         if (selected[0] == 'y') {
             choice = TRUE;
             startGame();
