@@ -22,6 +22,8 @@
 ## Codacy and Codiga Badges 
 * Codacy
 
+   [![Codacy Badge](https://app.codacy.com/project/badge/Grade/8d74535eef4f48e4bb1b64cb5cf6bd63)](https://www.codacy.com/gh/s-rithu020/M1_HangmanGame/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s-rithu020/M1_HangmanGame&amp;utm_campaign=Badge_Grade)
+   
 * Codiga
 
    ![Code Quality score](https://api.codiga.io/project/32238/score/svg)
