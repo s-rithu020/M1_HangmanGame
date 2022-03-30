@@ -15,7 +15,6 @@ void replay()
         else if (selected[0] == 'n') {
             choice = TRUE;
             exit(0);
-            printf("\n");
         } 
         else {
             printf("Invalid input. Try again.\n\n");
