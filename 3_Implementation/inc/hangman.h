@@ -16,6 +16,11 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define MAXWORDS 1000
+#define MAXLEN 64
+
+#define TRUE 1
+#define FALSE 0
 /**
  * @brief Draws the hangman when user makes a mistake
  * 
