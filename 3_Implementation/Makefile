@@ -1,8 +1,20 @@
-PROJ_NAME = a.out
+# Name of the project
+PROJECT_NAME = hangmanmain
 
-SRC = main.c
+# Output directory
+BUILD = build
 
-BUILD_DIR = Build 
+UNI=unity/unity.c
+
+# All source code files
+SRC = src/hangmanmain.c\
+src/drawHangman.c\
+src/replay.c\
+src/startGame.c
+
+# All test source files
+TEST_SRC = test/test_Hangman.c\
+unity/unity.c 
 
 #To check if the OS is windows or linux and set the executable file extension and delete command accordingly
 ifdef OS
@@ -17,31 +29,69 @@ else
    endif
 endif
 
-all:$(SRC)
-	gcc $^ -o $(PROJ_NAME)
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).$(EXEC)
 
-run: all
-	./$(PROJ_NAME)
-    
-analyze: all memcheck staticcheck coverage codesize sanitize_check
+# All include folders with header files
+INC	= -Iinc\
+-Iunity\
+
+#Library Includes
+#if working with CUnit 
+#INCLUDE_LIBS = -lcunit
+INCLUDE_LIBS = -lcunit
+
+# Project Output name
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).$(EXEC)
+
+# Document files
+DOCUMENTATION_OUTPUT = documentation/html
+
+# Default target built
+$(PROJECT_NAME):all
+
+# Run the target even if the matching name exists
+.PHONY: run clean test doc all
+
+all: $(SRC) $(BUILD)
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT)
+
+# Call `make run` to run the application
+run: $(PROJECT_NAME)
+	./$(PROJECT_OUTPUT)
+
+# Document the code using Doxygen
+#doc:
+#	make -C ./documentation
+
+# Build and run the unit tests
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
+
+analyze: test memcheck staticcheck coverage sanitize_check
+
+#Coverage
+coverageCheck:$(BUILD)
+	gcc -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	./$(TEST_OUTPUT)
 
 staticcheck:
 	cppcheck --enable=all .
 
 memcheck:
-	valgrind ./$(PROJ_NAME)
+	valgrind $(BUILD)/$(PROJECT_NAME).$(EXEC)
 
 sanitize_check:
-	gcc -fsanitize=address -fno-omit-frame-pointer $(SRC) -o $(PROJ_NAME)
-	./$(PROJ_NAME)
+	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
+	./$(TEST_OUTPUT)
 
-coverage:$(SRC)
-	gcc -fprofile-arcs -ftest-coverage $< -o $(PROJ_NAME)
-	./$(PROJ_NAME)
-	gcov -a $(SRC)
+#codesize:$(PROJECT_NAME)
+    #size $^
 
-codesize:$(PROJ_NAME)
-	size $^
-
+# Remove all the built files, invoke by `make clean`
 clean:
-	rm -rf $(PROJ_NAME) *.gcov *.gcda *.gcno
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+
+# Create new build folder if not present
+$(BUILD):
+	mkdir build
