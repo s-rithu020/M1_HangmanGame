@@ -1,4 +1,5 @@
-name: CodeQuality Dynamic Code Analysis Valgrind
+name: Valgrind
+
 on:
   push:
     branches: [ main ]
@@ -6,16 +7,13 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  build:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: apt install dependency
-      run: |
-        sudo apt-get -y install valgrind
-    - name: make test
-      run: make -C 3_Implementation/test
-    - name: Valgrind
-      run: valgrind ./3_Implementation/build/Test_main.out
+    - uses: actions/checkout@v3
+    - name: Update
+      run: sudo apt-get update
+    - name: Install-Valgrind
+      run: sudo apt-get install valgrind
