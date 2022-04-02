@@ -59,3 +59,11 @@ Hangman can be played on a piece of paper with a pencil. It is also available on
 | LR05 | Other game statistics to be shown  |	Future |
 | LR06 | Shows a row of dashes for each letter in the word | Implemented |
 | LR07 | Duplicate letters in a word are not counted individually  | Implemented |
+
+
+### Best Methods to be Followed:
+* Printf and scanf statements are placed only when necessary and for user convenience
+* Used arrays to accept inputs from user and store the values 
+* Usage of functions to reduce dependency on main function
+* Header files were created to use program functions for other c files
+* Unit testing was done to avoid errors in the code
