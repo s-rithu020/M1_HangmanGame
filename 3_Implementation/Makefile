@@ -71,7 +71,7 @@ test:$(BUILD)
 analyze: test memcheck staticcheck coverage sanitize_check
 
 #Coverage
-coverageCheck:$(BUILD)
+coverage:$(BUILD)
 	gcc -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
 
