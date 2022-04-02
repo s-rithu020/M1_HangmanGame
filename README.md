@@ -42,6 +42,13 @@ Folders                | Description
 `6_Images`            | Images related to the project
 
 
+## Contributors List and Summary
+
+PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|Number of Test Cases|Test Case Pass
+-------|---------|----------------|----------------|---------------|-------------|--------------
+1 | Rithu K Somaiah  | All    | 2   | 2   |5 |5    
+  
+
 ## Learning Resources and References
 * [Hangman Game](https://www.hangmanwords.com/play)
 * [Source for word list (Modified it by adding more words)](https://github.com/Xethron/Hangman/blob/master/words.txt)
