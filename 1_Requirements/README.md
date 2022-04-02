@@ -16,7 +16,7 @@
    * Increases spelling and vocabulary
    * Can be played anytime
    * Enhances cognitive skills
-   * Game is played against a computer "host" which doesn't make mistakes unlike a human "host"
+   * Game is played against a computer host which doesn't make mistakes unlike a human host
 
 
 ## Features
