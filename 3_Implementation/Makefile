@@ -85,9 +85,6 @@ sanitize_check:
 	gcc -fsanitize=address -fno-omit-frame-pointer -o $(PROJECT_OUTPUT) 
 	./$(PROJECT_OUTPUT)
 
-codesize:$(PROJECT_NAME)
-    size $^
-
 # Remove all the built files, invoke by `make clean`
 clean:
 	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
