@@ -4,7 +4,7 @@
 
 ### Description:
 * Hangman is a quick and easy game for two people, requiring just paper and pencil. One of the players, the "host", makes up a secret word. The other player has to try and guess this word by asking which of the letters of the alphabet it contains. However, every wrong guess brings them one step closer to losing the game. 
-* In this project, the "host" is the computer which plays against the human, who is the "other player". The computer randomly chooses a word from a word list and asks the player to guess the word within six tries.
+* In this project, the "host" is the computer which plays against the human, who is the "other player". The computer randomly chooses a word from a word list and asks the player to guess the word within six tries. 
 
 
 ### Objective
