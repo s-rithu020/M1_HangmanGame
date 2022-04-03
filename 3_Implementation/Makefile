@@ -68,12 +68,12 @@ test:$(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
 
-analyze: test memcheck staticcheck coverage sanitize_check
+analyze: all memcheck staticcheck coverage sanitize_check
 
 #Coverage
 coverage:$(BUILD)
-	gcc -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
+	gcc -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(PROJECT_OUTPUT)
+	./$(PROJECT_OUTPUT)
 
 staticcheck:
 	cppcheck --enable=all .
@@ -82,8 +82,8 @@ memcheck:
 	valgrind $(BUILD)/$(PROJECT_NAME).$(EXEC)
 
 sanitize_check:
-	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
-	./$(TEST_OUTPUT)
+	gcc -fsanitize=address -fno-omit-frame-pointer -o $(PROJECT_OUTPUT) 
+	./$(PROJECT_OUTPUT)
 
 #codesize:$(PROJECT_NAME)
     #size $^
